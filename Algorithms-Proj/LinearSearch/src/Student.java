@@ -8,7 +8,7 @@ public class Student {
 
     // equals比较默认是两个类对象的地址，重写实现比较字符串
 //    public boolean equals(Student student) { }
-    // equals是Object父类的函数 覆盖方法，函数签名要与父类的函数签名保持一致 传入Object
+    // equals是Object父类的函数 覆盖方法，函数签名要与父类的函数签名保持一致 必须传入Object
     @Override
     public boolean equals(Object student) {
         // 先看一看当前类对象是否为Student类对象
