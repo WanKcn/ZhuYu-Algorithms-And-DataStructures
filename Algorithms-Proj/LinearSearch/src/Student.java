@@ -11,7 +11,7 @@ public class Student {
     // equals是Object父类的函数 覆盖方法，函数签名要与父类的函数签名保持一致 必须传入Object
     @Override
     public boolean equals(Object student) {
-        // 先看一看当前类对象是否为Student类对象
+        // 先看一看当前类对象是否为Student类对象，地址是否是一样的，实际上比较同一个对象
         if (this == student)
             return true;
         if (this == null)
