@@ -16,7 +16,7 @@ public class SelectionSort {
      *
      * @param arr
      */
-    public static <E extends Comparable<E>> void sortASC(E[] arr) {
+    public static <E extends Comparable<E>> void sort(E[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int minIndex = i;
             for (int j = i; j < arr.length; j++) {
@@ -32,7 +32,7 @@ public class SelectionSort {
      *
      * @param arr
      */
-    public static <E extends Comparable<E>> void sortDESC(E[] arr) {
+    public static <E extends Comparable<E>> void sort2(E[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int minIndex = i;
             for (int j = i; j < arr.length; j++) {
