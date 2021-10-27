@@ -1,4 +1,4 @@
-import java.util.List;
+import java.util.Arrays;
 
 /**
  * @description:
@@ -11,17 +11,15 @@ public class Test {
     public static void main(String[] args) {
         int[] data = {1000, 10000, 100000};
 
-//        for (int n : data) {
-//            Integer[] arr = ArrayGenerator.generateRandomArray(n, n);
-//            SortingHelper.sortTest("InsertionSort", arr);
-//        }
+        for (int n : data) {
+            Integer[] arr = ArrayGenerator.generateRandomArray(n, n);
+            Integer[] arr2 = Arrays.copyOf(arr, arr.length);
+//            SortingHelper.sortTest("SelectionSort", arr);
+            SortingHelper.sortTest("InsertionSort", arr);
+            SortingHelper.sortTest("InsertionSort2", arr2);
+            System.out.println();
 
-        Integer[] arr = {1, 4, 3, 5, 8, 0, 2, 2, 5, 8, 6};
-        InsertionSort.sort2(arr);
-        for (int n : arr) {
-            System.out.print(n + " ");
         }
-
     }
 
 }
